@@ -75,7 +75,6 @@ threads=$4
 acc=1
 getos
 os_type=$?
-let sub=${start}-${end}
 
 #parameters check
 if [ $os_type -eq 1 ];then
@@ -85,6 +84,7 @@ fi
 #other parameters check haven't been done.
 #echo ">>>sh RunHistoryByDateMultithread.sh [yourscript] [start-date] [end-date] [threads]>>>"
 
+let sub=${start}-${end}
 if [ $sub -ge 0 ];then
   acc=-1
 else
